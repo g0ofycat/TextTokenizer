@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Tokenizer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Text Tokenizer</h1>
+    <div class="input-container">
+      <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+
+      <div class="options">
+        <label class="switch">
+          <input type="checkbox" id="lowercaseCheckbox" />
+          <span class="slider"></span>
+          <i>Lowercase</i>
+        </label>
+        <label>
+          <i>Type:</i>
+          <select id="typeSelect">
+            <option value="bpe">BPE</option>
+            <option value="WhiteSpace">WhiteSpace</option>
+            <option value="char">Character</option>
+          </select>
+        </label>
+      </div>
+
+      <button id="tokenizeBtn">🔎︎</button>
+    </div>
+    <div id="outputArea"></div>
+  </body>
+</html>
